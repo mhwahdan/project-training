@@ -33,23 +33,22 @@
             // 
             // submitBtn
             // 
-            submitBtn.Location = new Point(192, 144);
-            submitBtn.Margin = new Padding(3, 4, 3, 4);
+            submitBtn.Location = new Point(168, 108);
             submitBtn.Name = "submitBtn";
-            submitBtn.Size = new Size(230, 117);
+            submitBtn.Size = new Size(201, 88);
             submitBtn.TabIndex = 0;
             submitBtn.Text = "lolo";
             submitBtn.UseVisualStyleBackColor = true;
+            submitBtn.MouseClick += submitBtn_MouseClick;
             submitBtn.MouseLeave += submitBtn_MouseLeave;
             submitBtn.MouseHover += submitBtn_MouseHover;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(639, 389);
+            ClientSize = new Size(559, 292);
             Controls.Add(submitBtn);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
