@@ -35,10 +35,16 @@ namespace project_training
 
         private void submitBtn_MouseClick(object sender, MouseEventArgs e)
         {
-            
+
             Form2 f2 = new Form2();
             f2.Show();
-            this.Hide();
+            this.Close();
+
+        }
+
+        private void submitBtn_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
