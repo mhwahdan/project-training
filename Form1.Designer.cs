@@ -28,35 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             submitBtn = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // submitBtn
             // 
-            submitBtn.Location = new Point(192, 144);
-            submitBtn.Margin = new Padding(3, 4, 3, 4);
+            submitBtn.Location = new Point(312, 230);
+            submitBtn.Margin = new Padding(5, 6, 5, 6);
             submitBtn.Name = "submitBtn";
-            submitBtn.Size = new Size(230, 117);
+            submitBtn.Size = new Size(374, 187);
             submitBtn.TabIndex = 0;
             submitBtn.Text = "lolo";
             submitBtn.UseVisualStyleBackColor = true;
+            submitBtn.Click += submitBtn_Click;
             submitBtn.MouseLeave += submitBtn_MouseLeave;
             submitBtn.MouseHover += submitBtn_MouseHover;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(28, 67);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(200, 39);
+            textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(639, 389);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1038, 622);
+            Controls.Add(textBox1);
             Controls.Add(submitBtn);
-            Margin = new Padding(3, 4, 3, 4);
+            Margin = new Padding(5, 6, 5, 6);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button submitBtn;
+        private TextBox textBox1;
     }
 }
