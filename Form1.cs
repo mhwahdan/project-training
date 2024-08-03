@@ -9,8 +9,9 @@ namespace project_training
 
         private void submitBtn_MouseHover(object sender, EventArgs e)
         {
-            submitBtn.Text = "I am hovered";
-        }
+            submitBtn.Text = "NotSharkawyz";
+                MessageBox.Show("sharkawy");
+    }
 
         private void submitBtn_MouseLeave(object sender, EventArgs e)
         {
