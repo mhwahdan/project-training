@@ -9,7 +9,7 @@ namespace project_training
 
         private void submitBtn_MouseHover(object sender, EventArgs e)
         {
-            submitBtn.Text = "NotSharkawy";
+            submitBtn.Text = "NotSharkaw";
             //MessageBox.Show("sharkawy conflict");
         }
 
