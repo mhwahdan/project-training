@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             submitBtn = new Button();
             textBox1 = new TextBox();
             SuspendLayout();
@@ -36,13 +35,13 @@
             // submitBtn
             // 
             submitBtn.Location = new Point(312, 230);
-            submitBtn.Margin = new Padding(5, 6, 5, 6);
-            submitBtn.Location = new Point(168, 108);
+            submitBtn.Margin = new Padding(9, 13, 9, 13);
             submitBtn.Name = "submitBtn";
-            submitBtn.Size = new Size(201, 88);
+            submitBtn.Size = new Size(373, 188);
             submitBtn.TabIndex = 0;
             submitBtn.Text = "lolo";
             submitBtn.UseVisualStyleBackColor = true;
+            submitBtn.Click += submitBtn_Click_1;
             submitBtn.MouseClick += submitBtn_MouseClick;
             submitBtn.MouseLeave += submitBtn_MouseLeave;
             submitBtn.MouseHover += submitBtn_MouseHover;
@@ -57,15 +56,15 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(559, 292);
+            ClientSize = new Size(1038, 623);
             Controls.Add(submitBtn);
+            Margin = new Padding(6, 6, 6, 6);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
