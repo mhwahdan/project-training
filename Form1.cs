@@ -5,6 +5,12 @@ namespace project_training
         public Form1()
         {
             InitializeComponent();
+            TestContext testContext = new TestContext();
+
+            Patient patient = (from _patient in testContext.Patients 
+                               where _patient.Age >= 0
+                               select _patient).FirstOrDefault();
+            submitBtn.Text = patient.Name;
         }
 
         private void submitBtn_MouseHover(object sender, EventArgs e)
@@ -36,9 +42,14 @@ namespace project_training
         private void submitBtn_MouseClick(object sender, MouseEventArgs e)
         {
 
-            Form2 f2 = new Form2();
-            f2.Show();
-            this.Close();
+            TestContext testContext = new TestContext();
+
+            testContext.Patients.Add(new Patient
+            {
+                Id = 1,
+                Name = "wahdan"
+            });
+            testContext.SaveChanges();
 
         }
 
