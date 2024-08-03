@@ -15,7 +15,22 @@ namespace project_training
 
         private void submitBtn_MouseLeave(object sender, EventArgs e)
         {
-            submitBtn.Text = "new ge";
+
+        }
+
+        private void submitBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(textBox1.Text);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void submitBtn_MouseClick(object sender, MouseEventArgs e)

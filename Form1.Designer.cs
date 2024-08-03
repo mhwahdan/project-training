@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             submitBtn = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // submitBtn
             // 
+            submitBtn.Location = new Point(312, 230);
+            submitBtn.Margin = new Padding(5, 6, 5, 6);
             submitBtn.Location = new Point(168, 108);
             submitBtn.Name = "submitBtn";
             submitBtn.Size = new Size(201, 88);
@@ -43,6 +47,14 @@
             submitBtn.MouseLeave += submitBtn_MouseLeave;
             submitBtn.MouseHover += submitBtn_MouseHover;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(28, 67);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(200, 39);
+            textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -51,11 +63,14 @@
             Controls.Add(submitBtn);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button submitBtn;
+        private TextBox textBox1;
     }
 }
