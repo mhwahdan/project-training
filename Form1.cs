@@ -6,5 +6,15 @@ namespace project_training
         {
             InitializeComponent();
         }
+
+        private void submitBtn_MouseHover(object sender, EventArgs e)
+        {
+            submitBtn.Text = "I am hovered on";
+        }
+
+        private void submitBtn_MouseLeave(object sender, EventArgs e)
+        {
+            submitBtn.Text = "Mouse leaved";
+        }
     }
 }

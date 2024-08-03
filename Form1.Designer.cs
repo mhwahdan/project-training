@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            submitBtn = new Button();
+            SuspendLayout();
+            // 
+            // submitBtn
+            // 
+            submitBtn.Location = new Point(255, 157);
+            submitBtn.Name = "submitBtn";
+            submitBtn.Size = new Size(201, 88);
+            submitBtn.TabIndex = 0;
+            submitBtn.Text = "wahdan";
+            submitBtn.UseVisualStyleBackColor = true;
+            submitBtn.MouseLeave += submitBtn_MouseLeave;
+            submitBtn.MouseHover += submitBtn_MouseHover;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(submitBtn);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button submitBtn;
     }
 }
