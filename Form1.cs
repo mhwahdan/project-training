@@ -15,7 +15,7 @@ namespace project_training
 
         private void submitBtn_MouseLeave(object sender, EventArgs e)
         {
-            submitBtn.Text = "new ge";
+            
         }
     }
 }
