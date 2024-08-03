@@ -37,7 +37,7 @@
             submitBtn.Name = "submitBtn";
             submitBtn.Size = new Size(201, 88);
             submitBtn.TabIndex = 0;
-            submitBtn.Text = "wahdan";
+            submitBtn.Text = "lolo";
             submitBtn.UseVisualStyleBackColor = true;
             submitBtn.MouseLeave += submitBtn_MouseLeave;
             submitBtn.MouseHover += submitBtn_MouseHover;
