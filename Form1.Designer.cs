@@ -33,9 +33,10 @@
             // 
             // submitBtn
             // 
-            submitBtn.Location = new Point(255, 157);
+            submitBtn.Location = new Point(192, 144);
+            submitBtn.Margin = new Padding(3, 4, 3, 4);
             submitBtn.Name = "submitBtn";
-            submitBtn.Size = new Size(201, 88);
+            submitBtn.Size = new Size(230, 117);
             submitBtn.TabIndex = 0;
             submitBtn.Text = "lolo";
             submitBtn.UseVisualStyleBackColor = true;
@@ -44,10 +45,11 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(639, 389);
             Controls.Add(submitBtn);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
