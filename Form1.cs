@@ -9,7 +9,7 @@ namespace project_training
 
         private void submitBtn_MouseHover(object sender, EventArgs e)
         {
-            submitBtn.Text = "I am hovered on";
+            submitBtn.Text = "I am hovered";
         }
 
         private void submitBtn_MouseLeave(object sender, EventArgs e)
